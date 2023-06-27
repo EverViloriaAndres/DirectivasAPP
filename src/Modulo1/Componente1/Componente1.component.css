@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 70%;
+  margin: 100px auto;
+}
+.container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+.correo,
+.clave {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: 1;
+  gap: 10px;
+}
+#enviar {
+  background-color: #0d6efd;
+  color: white;
+}
+
+form *:not(label, div) {
+  outline: solid 1px #0d6efd;
+  border: none;
+  border-radius: 2px;
+}
+
+p {
+  width: 70%;
+  margin: 200px auto;
+  padding: 10px;
+  border-radius: 2px;
+
+  text-align: center;
+
+  background-color: #198754;
+  color: white;
+}

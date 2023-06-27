@@ -1,0 +1,39 @@
+<div class="container">
+  <form action="#">
+    <div class="correo">
+      <label for="correo">Correo</label>
+      <input
+        type="email"
+        name="correo"
+        id="correo"
+        placeholder="E-mail"
+        [(ngModel)]="email"
+      />
+    </div>
+    <div class="clave">
+      <label for="password" Contraseña>Contraseña</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        [(ngModel)]="passw"
+      />
+    </div>
+    <input
+      type="submit"
+      value="Enviar"
+      id="enviar"
+      (click)="contolRegistro()"
+    />
+  </form>
+  <!--Directiva ngIf o condicional if-->
+  <p *ngIf="registrado; else elElse">{{ mensaje }}</p>
+  <ng-template #elElse> <p>Nadie registrado</p></ng-template>
+</div>
+
+<div class="container">
+  <ul>
+    <li *ngFor="let x of items">{{ x.titulo }}</li>
+  </ul>
+</div>
